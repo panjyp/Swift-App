@@ -12,10 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var coolLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: AnyObject) {
     
-        coolLabel.text = "Hello, World!"
-        print("Button Tapped")
+        print(text1.text!)
+        print(text2.text!)
     }
     
     @IBAction func newButtonPressed(_ sender: AnyObject) {
