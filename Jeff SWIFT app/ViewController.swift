@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newButtonPressed(_ sender: AnyObject) {
-        coolLabel.text = "Buttons are cool!"
+        coolLabel.text = "Answer is: \(Int(text1.text!)! + Int(text2.text!)!)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
