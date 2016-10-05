@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var coolLabel: UILabel!
+    
+    @IBAction func buttonTapped(_ sender: AnyObject) {
+    
+        coolLabel.text = "Hello, World!"
+        print("Button Tapped")
+    }
+    
+    @IBAction func newButtonPressed(_ sender: AnyObject) {
+        coolLabel.text = "Buttons are cool!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
