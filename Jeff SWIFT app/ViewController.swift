@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var text1: UITextField!
     @IBOutlet weak var text2: UITextField!
     
+    @IBOutlet weak var `switch`: UISwitch!
+    
     @IBAction func buttonTapped(_ sender: AnyObject) {
     
         print(text1.text!)
@@ -22,7 +24,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newButtonPressed(_ sender: AnyObject) {
-        coolLabel.text = "Answer is: \(Int(text1.text!)! + Int(text2.text!)!)"
+        
+        let addition :Bool
+        
+        addition = false
+        
+        if addition {
+            coolLabel.text = "Answer is: \(Int(text1.text!)! + Int(text2.text!)!)"
+        } else {
+            coolLabel.text = "Answer is: \(Int(text1.text!)! - Int(text2.text!)!)"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
